@@ -6,8 +6,10 @@ MEAN is a framework for an easy starting point with [MongoDB](http://www.mongodb
 
 ## NOTES
 
-I create this boilerplate because I wanted something easy and fast to start off with. I designed it so that it can be easikty modified and used to bootstrap MEAN stack projects. To use it simply clone the repo, get mongoDB running and edit the config.js file then run the cms node app.js
+I create this boilerplate because I wanted something easy and fast to start off with. I designed it so that it can be easily modified and used to bootstrap MEAN stack projects. To use it simply clone the repo, get mongoDB running and edit the config.js file then run the cms node app.js.I
+This MEAN STACK boilerplate follows the MVC (Model View Controller) design pattern. We will talk more on the file structure latter.
 
+This boiler plate contains a sample app built on it. This sample app displays some basic technologies behind the MEAN stack. This sample app uses, AngularJS and Angular UI-Router to create a Single Page App (SPA).
 
 
 ## Prerequisites
@@ -20,17 +22,9 @@ $ sudo apt-get update
 $ sudo apt-get install nodejs
 ```
 
-* *Git* - Get git using a package manager or <a href="http://git-scm.com/downloads">download</a> it.
-* Mean currently works with either grunt or gulp..
-```
-$ npm install -g grunt-cli
-$ npm install -g gulp
-// and bower
-$ npm install -g bower 
-```
 
 ## Installation
-First! you have to clone this repository. After that install the depenencies usin NPM.
+First! you have to clone this repository. After that install the depenencies usin NPM, and taht's all.
 
 ### Install the Dependencies
 
@@ -60,6 +54,26 @@ MEAN is an acronym for *M*ongo, *E*xpress.js , *A*ngular.js and *N*ode.js
 * <a href="http://mongoosejs.com/">Mongoose</a> - The mongodb node.js driver in charge of providing elegant mongodb object modeling for node.js
 * <a href="http://getbootstrap.com/">Twitter Bootstrap</a> - The most popular HTML, CSS, and JS framework for developing responsive, mobile first projects.
 * <a href="http://angular-ui.github.io/bootstrap/">UI Bootstrap</a> - Bootstrap components written in pure AngularJS
+
+
+
+## File Structure
+
+Here is a details instructin on this boilerplate file strcuture. You should adhere and have basic understanding of this file structure system, for better coding expirence. 
+
+* app.js : app.js is the applictaion's server. It is the entry point to our appliaction.
+* config/ : The config folder contains series of configurational files.
+  * config/db.js : In this file you set the URI to your mogoDB server.config
+  * config/middlewares.js : This file contains the predefined middlewares used by Express.js. It is also here taht you will add all the middlewares you want to use in your app.
+  * config/prefences.js : This file contains settings of your Express JS app. Here you can aso set your own app setting here. i.e you can set your app view template engine, by default this boiler plate uses pug. you can change it, and install the template engine of your choice.
+* contollers/ : The controllers folder contains all contollers that would be used by your app. By default, ther are two predefined comtollers.
+  * contollers/api.js : This is where all tour RESTUful API routes resides.
+  * contollers/index.js : This  file contains the routes of your index homepage index.
+* models/ : This is where your applictaions model resides. There is a sample file inside this folder that gives you the insight of wht sould be contained in this folder. the stack.js file in this folder contains schema named stack that will be used to build the Stack model.
+* public/ : This is where your staic content resides.
+* views/ : This is where your aplication views reside.
+
+
 
 ## License
 This project Is LICENSE under the MIT LICENSE. Read the LICENSE.txt
