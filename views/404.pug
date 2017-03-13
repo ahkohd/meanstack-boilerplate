@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title 404 - Not Found
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css', rel='stylesheet', media='screen')
+    link(rel='stylesheet', href='/css/style.css')
+  body(class="error")
+    div(class="container")
+      div(class="row")
+        div(class="col-lg-1")
+        div(class="col-lg-10 error-pg")
+          img(src="/imgs/404.jpg" class="img-responisve")
+          h1 404
+          p Opps!, it seems you have hit a dead end, the file you've requested for cannot be found.
+          h2 &bullet;&bullet;&bullet;
+          button(class="btn btn-info btn-lg", onclick="javascript:window.location='/'") HOME
+        div(class="col-lg-1")

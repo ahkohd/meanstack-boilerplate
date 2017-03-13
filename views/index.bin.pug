@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    title MEAN App - v 0.0.1
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(href='/css/bootstrap/css/bootstrap.min.css', rel='stylesheet', media='screen')
+    link(href='https://fonts.googleapis.com/css?family=Barrio|Dosis', rel='stylesheet')
+    link(rel='stylesheet', href='/css/style.css')
+    script(src='/js/angular.js')
+    script(src='/js/angular-ui-router.min.js')
+    script(src='/js/app.js')
+    script(src='/css/bootstrap/js/bootstrap.min.js')
+  body(class="app", ng-app="meanApp")
+    nav.navbar.navbar-default.navbar-fixed
+        .container-fluid
+            .navbar-header
+              a.navbar-brand(href='#') MEAN STACK
+            |     
+            ul.nav.navbar-nav
+              li.active
+                a(href='home') Home
+              |       
+              li
+                a(href='stories') Stories
+                |       
+              li
+                a(href='about') About
+    div(class="container")
+      div(class="row")
+        div(class="col-lg-3 col-sm-1")
+        div(class="col-lg-6 col-sm-10 planet")
+          img(src="/imgs/rocket.svg", class="img-responsive rocket")
+          h1 Spark!, We've, launched it.
+          h2 &bullet; &bullet; &bullet;
+          br
+          p(class="story") Our app is ready, let's start developing our app using our lovely stack. I wanna share with you a story. I and mom went to the market yesterday to buy some <b>M</b>angos. On our way, we drove past the <b>E</b>xpress then, I and mom saw some boys in some adjacent <b>A</b>ngle standing on the <b>N</b>ode of a tree, I asked mon do those boys <b>MEAN</b> it, mon replied, "sure they do <b>MEAN</b> it"..lol
+        div(class="col-lg-3 col-sm-1")
+      

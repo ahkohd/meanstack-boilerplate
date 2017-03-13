@@ -1,0 +1,154 @@
+<script>
+	$(function() {
+		$('.scroll-pane').jScrollPane();
+	});
+	$("#add-stacks").click(function() {
+		$("#stackModal").modal({
+			backdrop: false
+		});
+	});
+</script>
+
+<style>
+	body {
+		background: #f1f1f1;
+	}
+	
+	.navbar {
+		margin-bottom: 0;
+	}
+	/* Styles specific to this particular page */
+	
+	.horizontal-only {
+		height: auto;
+		max-height: 200px;
+	}
+</style>
+<div class="jumbotron mast">
+
+	<div class="row">
+		<div class="col-lg-1"></div>
+		<div class="col-lg-1">
+			<h1>
+        Stacks
+      </h1>
+		</div>
+		<div class="col-lg-8">
+
+		</div>
+		<div class="col-lg-2">
+
+			<a data-toggle="modal" id="add-stacks" data-backdrop="false"><span class="glyphicon glyphicon-plus"></span></a>
+		</div>
+	</div>
+
+</div>
+<br/><br/>
+
+<div class="container" ng-controller="stackController">
+
+	<!-- Modal -->
+	<div class="modal fade" id="stackModal" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"></button>
+					<h5 class="modal-title">Add Stack</h5>
+				</div>
+				<div class="modal-body">
+					<form>
+						<br/>
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-cog"></i></span>
+							<input id="name" type="text" class="form-control" name="name" placeholder="Stack name">
+						</div>
+						<br/>
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+							<input id="author" type="author" class="form-control" name="author" placeholder="Author">
+						</div>
+						<br/>
+						<div class="form-group">
+							<label for="comment">Description</label>
+							<textarea class="form-control" rows="5" name="description">Your stack description goes here..</textarea>
+						</div>
+
+
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary add-post" data-dismiss="modal"><i class="glyphicon glyphicon-plus"></i> Add Post </button>
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="glyphicon glyphicon-remove"></i> Cancel</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<div class="section">
+		<span class="state"></span> All ( {{stacks.lenght}} )
+	</div>
+
+	<div class="row cf">
+		<div class="col-lg-3">
+			<div class="post">
+				<h1>
+      Mongo DB
+      </h1>
+				<div class="scroll-pane">
+					<p>
+						MongoDB provides high availability with replica sets.[7] A replica set consists of two or more copies of the data. Each replica set member may act in the role of primary or secondary replica at any time. All writes and reads are done on the primary replica
+						by default. Secondary replicas maintain a copy of the data of the primary using built-in replication. When a primary replica fails, the replica set automatically conducts an election process to determine which secondary should become the primary.
+						Secondaries can optionally serve read operations, but that data is only eventually consistent by default
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3">
+			<div class="post">
+				<h1>
+      Express JS
+      </h1>
+
+				<div class="scroll-pane">
+					<p>
+						The original author, TJ Holowaychuk, described it as a Sinatra-inspired server,[3] meaning that it is relatively minimal with many features available as plugins. Express is the backend part of the MEAN stack, together with MongoDB database and AngularJS
+						frontend framework
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3">
+			<div class="post">
+				<h1>
+      Angular JS
+      </h1>
+				<div class="scroll-pane">
+					<p>
+						AngularJS (commonly referred to as "Angular" or "Angular.js") is a complete JavaScript-based open-source front-end web application framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges
+						encountered in developing single-page applications.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3">
+			<div class="post">
+				<h1>
+      Node JS
+      </h1>
+				<div class="scroll-pane">
+					<p>
+						Node.js was originally written in 2009 by Ryan Dahl.[22] The initial release supported only Linux. Its development and maintenance was led by Dahl and later sponsored by Joyent.[23] Dahl was inspired to create Node.js after seeing a file upload progress
+						bar on Flickr. The browser did not know how much of the file had been uploaded and had to query the Web server. Dahl desired an easier way.
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+</div>

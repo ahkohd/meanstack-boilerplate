@@ -1,0 +1,550 @@
+body {
+	font-family: 'Dosis', sans-serif !important;
+	color: #fff;
+	background: #dd4814;
+	overflow: hidden;
+}
+
+.navbar {
+	box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.2);
+	z-index: 10;
+}
+
+h1 {
+	font-family: 'Barrio', cursive !important;
+	font-size: 5em;
+}
+
+.mast {
+	background: #dd4814;
+	padding: 2.1em 1.5em;
+	margin-bottom: 2.3em;
+	border-radius: 0 !important;
+	border-bottom: 1px solid #eee;
+}
+
+.mast h1 {
+	font-family: 'Helvetica Neue', sans-serif !important;
+	font-size: 3.5em;
+}
+
+.modal-header {
+	background: linear-gradient(#f1f1f1, #e7e7e7);
+	border-bottom: 1px solid #ddd;
+	border-radius: 4px 4px 0 0;
+}
+
+.add-post {
+	background: #1dcaff !important;
+	border: 1px solid #00aced;
+}
+
+.add-post:hover {
+	border: 1px solid #1dcaff;
+}
+
+.modal-footer {
+	border-top: 0;
+}
+
+.modal-content {
+	background: #f1f1f1;
+	color: #444;
+	border: 0;
+}
+
+.navbar {
+	border-radius: 0;
+}
+
+.story {
+	word-spacing: 3px;
+}
+
+.state {
+	background: #dd4814;
+	width: 12px;
+	height: 12px;
+	margin-right: 1em;
+	display: inline-block;
+	border-radius: 50%;
+}
+
+.close {
+	background: red !important;
+	width: 12px !important;
+	height: 12px !important;
+	top: 8px;
+	color: red;
+	position: relative;
+	display: block !important;
+	border-radius: 50%;
+}
+
+.section {
+	margin: 2.5em;
+	color: #777;
+	font-size: 18px;
+}
+
+.author {
+	border-radius: 50%;
+	margin: 3em auto;
+}
+
+.active {
+	background: #e7e7e7;
+	font-weight: bolder;
+}
+
+.planet {
+	text-align: center;
+}
+
+@keyframes rocket-animate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes orbit {
+	from {
+		-webkit-transform: rotate(0deg) translateX(24em);
+	}
+	to {
+		-webkit-transform: rotate(-360deg) translateX(24em);
+	}
+}
+
+@-moz-keyframes orbit {
+	from {
+		-moz-transform: rotate(0deg) translateX(24em);
+	}
+	to {
+		-moz-transform: rotate(-360deg) translateX(24em);
+	}
+}
+
+@-o-keyframes orbit {
+	from {
+		-o-transform: rotate(0deg) translateX(24em);
+	}
+	to {
+		-o-transform: rotate(-360deg) translateX(24em);
+	}
+}
+
+@keyframes orbit {
+	from {
+		transform: rotate(0deg) translateX(24em);
+	}
+	to {
+		transform: rotate(-360deg) translateX(24em);
+	}
+}
+
+.rocket {
+	position: absolute;
+	top: 25%;
+	left: 28%;
+	max-width: 200px;
+	z-index: -1;
+	-webkit-animation: orbit 10s linear infinite;
+	/* Chrome, Safari 5 */
+	-moz-animation: orbit 10s linear infinite;
+	/* Firefox 5-15 */
+	-o-animation: orbit 10s linear infinite;
+	/* Opera 12+ */
+	animation: orbit 10s linear infinite;
+	/* Chrome, Firefox 16+, IE 10+, Safari 5 */
+}
+
+body.error {
+	background: #fff;
+}
+
+body.error .container {
+	margin-top: 12em;
+	color: #888;
+}
+
+body.error h1 {
+	font-size: 10em;
+	color: #444;
+}
+
+.error-pg {
+	text-align: center;
+}
+
+.error-pg p {
+	color: grey;
+	font-size: 12px;
+	max-width: 80%;
+	margin: 2em auto;
+}
+
+.error-pg button {
+	background: #fff;
+	margin-top: 1em;
+	border: 2px solid #666;
+	border-radius: 0;
+	height: 55px;
+	color: #555;
+	width: 20%;
+}
+
+.error-pg button:hover,
+.error-pg button:active {
+	background: #444;
+	color: #000;
+	border: 2px solid rgba(255, 255, 255, .3);
+}
+
+.cf:before,
+.cf:after {
+	content: " ";
+	/* 1 */
+	display: table;
+	/* 2 */
+}
+
+.cf:after {
+	clear: both;
+}
+
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.cf {
+	*zoom: 1;
+}
+
+#add-stacks {
+	margin-top: 2em;
+	display: block;
+	padding-top: 8px;
+	padding-left: 2px;
+	cursor: pointer;
+	font-size: 16px;
+	text-align: center;
+	height: 40px;
+	width: 40px;
+	background: white;
+	color: #444;
+	border-radius: 50%;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, .3);
+}
+
+#add-story:hover {
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, .4);
+}
+
+.post {
+	width: 96%;
+	padding: 2em 0.4em 0 0.4em;
+	background: #FFF;
+	height: 350px !important;
+	color: #555;
+	box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-pane {
+	height: 120px !important;
+	width: 100%;
+	overflow: auto;
+}
+
+.post h1 {
+	font-size: 2em;
+	margin: 2em;
+	font-family: 'Helvetica Neue', sans-serif !important;
+}
+
+.post:last-child {
+	margin-right: 0;
+}
+
+.post:hover {
+	box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* CSS LOADER */
+
+@keyframes arrow-spin {
+	100% {
+		transform: rotate(179deg);
+	}
+}
+
+@-webkit-keyframes arrow-spin {
+	100% {
+		-webkit-transform: rotate(179deg);
+	}
+}
+
+.psoload,
+.psoload *,
+.psoload *:before,
+.psoload *:after {
+	box-sizing: border-box;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+}
+
+.psoload {
+	position: relative;
+	margin: 30px auto;
+	height: 150px;
+	width: 150px;
+}
+
+.psoload .straight,
+.psoload .curve {
+	position: absolute;
+	top: 17.5%;
+	left: 17.5%;
+	width: 65%;
+	height: 65%;
+	border-radius: 100%;
+	animation: arrow-spin 0.85s cubic-bezier(0.2, 0.8, 0.9, 0.1) infinite;
+	-webkit-animation: arrow-spin 0.85s cubic-bezier(0.2, 0.8, 0.9, 0.1) infinite;
+}
+
+.psoload .straight:before,
+.psoload .straight:after {
+	content: '';
+	position: absolute;
+	width: 15%;
+	border-bottom: 3px solid #eee;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+.psoload .straight:before {
+	top: 5px;
+	left: 5px;
+}
+
+.psoload .straight:after {
+	bottom: 5px;
+	right: 5px;
+}
+
+.psoload .curve:before,
+.psoload .curve:after {
+	content: '';
+	position: absolute;
+	width: 45px;
+	height: 10px;
+	border: solid 3px transparent;
+	border-top-color: #eee;
+	border-radius: 50%/10px 10px 0 0;
+	z-index: 90001;
+}
+
+.psoload .curve:before {
+	transform: rotate(-63deg) translateX(-27px) translateY(-4px);
+	-webkit-transform: rotate(-63deg) translateX(-27px) translateY(-4px);
+}
+
+.psoload .curve:after {
+	bottom: 5px;
+	right: 5px;
+	transform: rotate(115deg) translateX(-26px) translateY(-12px);
+	-webkit-transform: rotate(115deg) translateX(-26px) translateY(-12px);
+}
+
+.psoload .center {
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	width: 60%;
+	height: 60%;
+	border-radius: 100%;
+	border: 3px solid #eee;
+}
+
+.psoload .inner {
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+	border-radius: 100%;
+	animation: arrow-spin 0.85s cubic-bezier(0.2, 0.8, 0.9, 0.1) infinite reverse;
+	-webkit-animation: arrow-spin 0.85s cubic-bezier(0.2, 0.8, 0.9, 0.1) infinite reverse;
+}
+
+.psoload .inner:before,
+.psoload .inner:after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-bottom-width: 11px;
+	border-bottom-color: #eee;
+}
+
+.psoload .inner:before {
+	top: 12px;
+	left: 12px;
+	transform: rotate(128deg);
+	-webkit-transform: rotate(128deg);
+}
+
+.psoload .inner:after {
+	bottom: 12px;
+	right: 12px;
+	transform: rotate(-48deg);
+	-webkit-transform: rotate(-48deg);
+}
+
+
+/* JSCROLL PANE */
+
+
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+.jspContainer {
+	overflow: hidden;
+	position: relative;
+}
+
+.jspPane {
+	position: absolute;
+}
+
+.jspVerticalBar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 8px;
+	height: 100%;
+	background: red;
+}
+
+.jspHorizontalBar {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 16px;
+	background: red;
+}
+
+.jspCap {
+	display: none;
+}
+
+.jspHorizontalBar .jspCap {
+	float: left;
+}
+
+.jspTrack {
+	background: #dde;
+	position: relative;
+}
+
+.jspDrag {
+	background: #bbd;
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag {
+	float: left;
+	height: 100%;
+}
+
+.jspArrow {
+	background: #50506d;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+}
+
+.jspArrow.jspDisabled {
+	cursor: default;
+	background: #80808d;
+}
+
+.jspVerticalBar .jspArrow {
+	height: 16px;
+}
+
+.jspHorizontalBar .jspArrow {
+	width: 16px;
+	float: left;
+	height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus {
+	outline: none;
+}
+
+.jspCorner {
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+
+* html .jspCorner {
+	margin: 0 -3px 0 0;
+}
+
+
+/* PAGE TRANSITION */
+
+.slide.ng-leave {
+	position: relative;
+}
+
+.slide.ng-enter {
+	position: relative;
+}
+
+.slide.ng-enter,
+.slide.ng-leave {
+	-webkit-transition: -webkit-transform 0.3s ease-in, opacity 0.3s ease-in;
+	-moz-transition: -moz-transform 0.3s ease-in, opacity 0.3s ease-in;
+	-o-transition: -o-transform 0.3s ease-in, opacity 0.3s ease-in;
+	transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+.slide.ng-enter,
+.slide.ng-leave.ng-leave-active {
+	-webkit-transform: scaleX(0.0001);
+	-o-transform: scaleX(0.0001);
+	transform: scaleX(0.0001);
+	opacity: 0;
+}
+
+.slide,
+.slide.ng-enter.ng-enter-active {
+	-webkit-transform: scaleX(1);
+	-o-transform: scaleX(1);
+	transform: scaleX(1);
+	opacity: 1;
+}
