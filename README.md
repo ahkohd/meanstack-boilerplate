@@ -9,7 +9,7 @@ MEAN is a framework for an easy starting point with [MongoDB](http://www.mongodb
 I create this boilerplate because I wanted something easy and fast to start off with. I designed it so that it can be easily modified and used to bootstrap MEAN stack projects. To use it simply clone the repo, get mongoDB running and edit the config.js file then run the cms node app.js.I
 This MEAN STACK boilerplate follows the MVC (Model View Controller) design pattern. We will talk more on the file structure latter.
 
-This boiler plate contains a sample app built on it. This sample app displays some basic technologies behind the MEAN stack. This sample app uses, AngularJS and Angular UI-Router to create a Single Page App (SPA).
+This MEAN STACK boiler plate contains a sample app built on it. The sample app displays some basic technologies behind the MEAN stack. This sample app uses, AngularJS and Angular UI-Router module to create a Single Page App (SPA). Read More On That.
 
 
 ## Prerequisites
@@ -66,7 +66,7 @@ Here is a details instructin on this boilerplate file strcuture. You should adhe
   * config/db.js : In this file you set the URI to your mogoDB server.config
   * config/middlewares.js : This file contains the predefined middlewares used by Express.js. It is also here taht you will add all the middlewares you want to use in your app.
   * config/prefences.js : This file contains settings of your Express JS app. Here you can aso set your own app setting here. i.e you can set your app view template engine, by default this boiler plate uses pug. you can change it, and install the template engine of your choice.
-* contollers/ : The controllers folder contains all contollers that would be used by your app. By default, ther are two predefined comtollers.
+* contollers/ : The controllers folder contains all contollers that would be used by your app. By default, ther are two predefined comtollers. Note that you don't to explicitly include this contoller because on start up of the appliction, the application automatically loads the all contollers in this folder.
   * contollers/api.js : This is where all tour RESTUful API routes resides.
   * contollers/index.js : This  file contains the routes of your index homepage index.
 * models/ : This is where your applictaions model resides. There is a sample file inside this folder that gives you the insight of wht sould be contained in this folder. the stack.js file in this folder contains schema named stack that will be used to build the Stack model.
