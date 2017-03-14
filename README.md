@@ -59,15 +59,15 @@ MEAN is an acronym for *M*ongo, *E*xpress.js , *A*ngular.js and *N*ode.js
 
 ## File Structure
 
-Here is a details instruction on this boilerplate file structure. You should adhere and have basic understanding of this file structure system, for better coding experience. 
+Here is a detailed instruction on this boilerplate file structure. You should adhere and have basic understanding of this file structure system, for better coding experience. 
 
 * app.js : app.js is the application’s server. It is the entry point to our application.
 * config/ : The config folder contains series of configuration files.
   * config/db.js : In this file you set the URI to your mogoDB  server
-  * config/middlewares.js : This file contains the predefined middle wares used by Express.js. It is also here taht you will add all the middle wares you want to use in your app.
-  * config/prefences.js : This file contains settings of your Express JS app. Here you can also set your own app setting here. i.e you can set your app view template engine, by default this boiler plate uses pug. you can change it, and install the template engine of your choice.
-* controllers/ : The controllers folder contains all controllers that would be used by your app. By default, there are two predefined controllers. Note that you don't need to explicitly include this controller because on startup of the application, the application automatically loads the all controllers in this folder.
-  * controllers/api.js : This is where all tour RESTUful API routes resides.
+  * config/middlewares.js : This file contains the predefined middle wares used by Express.js. It is also here that you will add all the middle wares you want to use in your app.
+  * config/prefences.js : This file contains settings of your Express JS app. Here you can also add your settings. i.e you can set your app's view template engine, by default this boiler plate uses pug. You can change, and install the template engine of your choice.
+* controllers/ : The controllers folder contains all controllers that would be used by your app. By default, there are two predefined controllers. Note that you don't need to explicitly include controllers in this folder because on startup, the application automatically loads them.
+  * controllers/api.js : This is where all tour REST API routes resides.
   * controllers/index.js : This  file contains the routes of your index homepage index.
 * models/ : This is where your applications model resides. There is a sample file inside this folder that gives you the insight of what should be contained in this folder. the stack.js file in this folder contains schema named stack that will be used to build the Stack model.
 * public/ : This is where your static content resides.
@@ -76,6 +76,5 @@ Here is a details instruction on this boilerplate file structure. You should adh
 
 
 ## License
-This project Is LICENSE under the MIT LICENSE. Read the LICENSE.txt
+This project is licensed under the MIT LICENSE.
 
->>>>>>> 067a9c61ae6e33c1fd94865e5fde93ef4f37c1e6
