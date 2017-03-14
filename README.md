@@ -33,6 +33,13 @@ $ cd <myApp>
 $ npm install 
 ```
 
+### Starting Up
+
+```bash
+$ node app.js 
+```
+
+
 ## Technologies
 
 ### The MEAN stack
