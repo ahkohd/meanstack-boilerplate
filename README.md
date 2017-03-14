@@ -6,8 +6,8 @@ MEAN is a framework for an easy starting point with [MongoDB](http://www.mongodb
 
 ## NOTES
 
-I create this boilerplate because I wanted something easy and fast to start off with. I designed it so that it can be easily modified and used to bootstrap MEAN stack projects. To use it simply clone the repo, get mongoDB running and edit the config.js file then run the cms node app.js.I
-This MEAN STACK boilerplate follows the MVC (Model View Controller) design pattern. We will talk more on the file structure latter.
+I created this boilerplate because I wanted something easy and fast to start off with. I designed it so that it can be easily modified and used to bootstrap MEAN stack project development. To get started, simply clone this repository, get mongoDB running and edit the config.js file then run the following command on your terminal. $ npm install && node app.js.
+This MEAN STACK boilerplate follows the MVC (Model View Controller) design pattern. We will talk more on the file structure later.
 
 This MEAN STACK boiler plate contains a sample app built on it. The sample app displays some basic technologies behind the MEAN stack. This sample app uses, AngularJS and Angular UI-Router module to create a Single Page App (SPA). Read More On That.
 
