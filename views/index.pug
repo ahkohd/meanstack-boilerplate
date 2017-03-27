@@ -5,11 +5,13 @@ html(ng-app="meanApp")
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     link(href='/css/bootstrap/css/bootstrap.min.css', rel='stylesheet', media='screen')
     link(href='https://fonts.googleapis.com/css?family=Barrio|Dosis', rel='stylesheet')
+    link(rel='stylesheet', href='/css/loading-bar.css')
     link(rel='stylesheet', href='/css/style.css')
     script(src='/js/jquery.js')
     script(src='/js/angular/angular.min.js')
     script(src='/js/angular/angular-ui-router.min.js')
     script(src='/js/angular/angular-animate.js')
+    script(src='/js/loading-bar.js')
     script(src='/js/angular/app.js')
     script(src='/js/jquery.jscrollpane.min.js')
     script(src='/js/jquery.mousewheel.js')
@@ -31,5 +33,5 @@ html(ng-app="meanApp")
               |       
               li
                 a(ui-sref='about', ui-sref-active="active") About
-    div(ui-view, class="slide")
+    div(ui-view)
       

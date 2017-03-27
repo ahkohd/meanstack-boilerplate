@@ -1,7 +1,7 @@
 /////////////// ANGULAR LOGICS STAYS HERE ////////////////
 
 // app.js
-var meanApp = angular.module('meanApp', ['ngAnimate', 'ui.router']);
+var meanApp = angular.module('meanApp', ['ngAnimate', 'angular-loading-bar', 'ui.router']);
 
 
 meanApp.controller('stackController', function($scope, $http) {
